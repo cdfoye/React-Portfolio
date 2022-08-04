@@ -11,10 +11,10 @@ import Home from "./components/Home/Home";
 import "./App.css";
 
 const App = () => {
-  const [{ darkMode }] = useContext(darkMode);
+  const [{ themeName }] = useContext(darkMode);
 
   return (
-    <div id="top" className={`${darkMode} app`}>
+    <div id="top" className={`${themeName} app`}>
       <Header />
 
       <main>
