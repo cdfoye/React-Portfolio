@@ -5,7 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { darkMode } from "../../contexts/theme";
 import { projects, skills, contact } from "../../info";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../../assets/Resume.pdf";
 import "./Navbar.css";
 
 const Navbar = () => {

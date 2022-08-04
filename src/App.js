@@ -1,32 +1,25 @@
-import { useContext } from "react";
-import { darkMode } from "./contexts/theme";
+import React from "react";
+import "./App.css";
 import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home";
-import "./App.css";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-const App = () => {
-  const [{ themeName }] = useContext(darkMode);
-
+function App() {
   return (
-    <div id="top" className={`${themeName} app`}>
+    <div className="App">
       <Header />
-
-      <main>
-        <Home />
-        <About />
-        <Portfolio />
-        <Contact />
-      </main>
-
-      <ScrollToTop />
+      <Home />
+      <About />
+      <Portfolio />
+      <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
-};
+}
 
 export default App;
