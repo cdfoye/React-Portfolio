@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { darkMode } from "./contexts/theme";
+// import { darkMode } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -7,6 +7,7 @@ import Resume from "./components/Resume/Resume";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
 import "./App.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Header />
 
       <main>
+        <Home />
         <About />
         <Portfolio />
         <Contact />
