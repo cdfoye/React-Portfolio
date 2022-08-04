@@ -3,7 +3,6 @@ import { darkMode } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Resume from "./components/Resume/Resume";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -22,7 +21,6 @@ const App = () => {
         <About />
         <Portfolio />
         <Contact />
-        <Resume />
       </main>
 
       <ScrollToTop />
