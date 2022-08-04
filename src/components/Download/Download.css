@@ -1,0 +1,75 @@
+.wrapper {
+  margin: auto;
+  width: 30%;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.dl-btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(59, 58, 58);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  -ms-transform: translate(100%, -150%);
+  transform: translate(100%, -150%);
+}
+
+.dl-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.dl-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.dl-btn:hover span {
+  padding-right: 25px;
+}
+
+.dl-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}

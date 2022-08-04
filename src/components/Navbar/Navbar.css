@@ -1,9 +1,23 @@
 .nav__list {
-  margin-right: 1.5em;
-  display: flex;
+  list-style-type: none;
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+  padding: 0;
+  overflow: hidden;
 }
 .nav__list-item {
-  margin-left: 1.5em;
+  float: right;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.link.link--nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .app .nav__hamburger {
@@ -12,6 +26,11 @@
 
 .nav__theme {
   margin-top: 0.4em;
+}
+
+.hamburger {
+  display: none;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -31,9 +50,11 @@
     margin: 0.5em 0;
   }
 
-  .app .nav__hamburger {
-    display: flex;
-    z-index: 2;
-    margin-left: 0.8em;
+  .topnav .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }

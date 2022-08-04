@@ -1,84 +1,38 @@
-import { useContext, useState } from "react";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
-import { darkMode } from "../../contexts/theme";
-import { projects, skills, contact } from "../../info";
-import Resume from "../../assets/Resume.pdf";
+import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(darkMode);
-  const [showNavList, setShowNavList] = useState(false);
-
-  const toggleNavList = () => setShowNavList(!showNavList);
-
   return (
-    <nav className="center nav">
-      <ul
-        style={{ display: showNavList ? "flex" : null }}
-        className="nav__list"
-      >
-        {projects.length ? (
-          <li className="nav__list-item">
-            <a
-              href="#projects"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
+    <nav className="center nav topnav">
+      <ul className="nav__list">
+        <Link to="/">
+          <h1>CF</h1>
+        </Link>
+        <li className="nav__list-item">
+          <Link to="/download" className="link link--nav">
+            resume
+          </Link>
+        </li>
 
-        {skills.length ? (
-          <li className="nav__list-item">
-            <a
-              href="#skills"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Skills
-            </a>
-          </li>
-        ) : null}
+        <li className="nav__list-item">
+          <Link to="/contact" className="link link--nav">
+            contact
+          </Link>
+        </li>
 
-        {contact.email ? (
-          <li className="nav__list-item">
-            <a
-              href="#contact"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Contact
-            </a>
-          </li>
-        ) : null}
-        <li>
-          <a href={Resume} target="_blank" rel="noreferrer noopener">
-            Resume
-          </a>
+        <li className="nav__list-item">
+          <Link to="/projects" className="link link--nav">
+            projects
+          </Link>
+        </li>
+
+        <li className="nav__list-item">
+          <Link to="/about" className="link link--nav">
+            projects
+          </Link>
         </li>
       </ul>
-
-      <button
-        type="button"
-        onClick={toggleTheme}
-        className="btn btn--icon nav__theme"
-        aria-label="toggle theme"
-      >
-        {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
-
-      <button
-        type="button"
-        onClick={toggleNavList}
-        className="btn btn--icon nav__hamburger"
-        aria-label="toggle navigation"
-      >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
-      </button>
     </nav>
   );
 };
