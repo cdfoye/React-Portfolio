@@ -1,5 +1,5 @@
 import { useContext } from "react";
-// import { darkMode } from "./contexts/theme";
+import { darkMode } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
