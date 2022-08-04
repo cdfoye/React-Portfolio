@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div class="home">
       <Particles
-        class="particulas-section"
+        class="particles-section"
         id="tsparticles"
         options={{
           background: {
