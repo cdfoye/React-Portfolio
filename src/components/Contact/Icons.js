@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icons = () => {
   return (
