@@ -1,0 +1,94 @@
+a {
+  color: #4db5ff;
+  transition: all 400ms ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: white;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid rgb(155, 150, 150);
+  transition: all 400ms ease;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: rgb(59, 58, 58);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: rgb(155, 150, 150);
+  color: white;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.githubRepo_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 6%;
+}
+
+.githubRepo_item {
+  background: rgb(59, 58, 58);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
+}
+
+.githubRepo_item:hover {
+  background-color: rgba(77, 181, 255, 0.4);
+  background: transparent;
+  border: 1px solid rgb(59, 58, 58);
+}
+
+.gitProject_item_image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 300px;
+}
+
+.githubRepo_item h3 {
+  margin: 1.2rem 0 2rem;
+}
+
+.githubRepo_item_cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ==================== MEDIA QUERIES (Medium DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+  .githubRepo_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Small DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+  .githubRepo_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

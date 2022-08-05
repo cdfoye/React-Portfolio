@@ -26,7 +26,7 @@ const About = () => {
               src={me}
               alt="Portrait of Catherine"
               width="400"
-              height="500"
+              height="450"
             ></img>
           </div>
         </div>

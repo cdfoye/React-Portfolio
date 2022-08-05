@@ -28,7 +28,8 @@
 }
 
 .flex-item-right {
-  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
   flex: 50%;
 }
 
