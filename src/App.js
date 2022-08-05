@@ -4,13 +4,13 @@ import "./App.css";
 // import Header from "./components/Header/Header";
 // import About from "./components/About/About";
 // import Portfolio from "./components/Portfolio/Portfolio";
-// import Contact from "./components/Contact/Contact";
 // import Footer from "./components/Footer/Footer";
 // import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Particles from "./components/Particles/Particles";
 import Download from "./components/Download/Download";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Particles />
     </Router>

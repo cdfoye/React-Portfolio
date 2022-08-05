@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <li className="nav__list-item">
           <Link to="/about" className="link link--nav">
-            projects
+            about
           </Link>
         </li>
       </ul>
