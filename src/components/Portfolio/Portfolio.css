@@ -34,7 +34,7 @@ a:hover {
   color: white;
 }
 
-img {
+.project-image {
   display: block;
   width: 100%;
   object-fit: cover;

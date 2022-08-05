@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import Icons from "./Icons";
 
 const Contact = () => {
   return (
@@ -42,12 +41,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-      </div>
-
-      <div className="icon-wrapper">
-        <div className="icon-bar">
-          <Icons />
-        </div>
       </div>
     </div>
   );
