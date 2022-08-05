@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 // import Header from "./components/Header/Header";
-// import About from "./components/About/About";
+import About from "./components/About/About";
 // import Portfolio from "./components/Portfolio/Portfolio";
 // import Footer from "./components/Footer/Footer";
 // import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/download" element={<Download />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Particles />
     </Router>

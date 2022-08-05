@@ -50,7 +50,7 @@ textarea {
 
 .icon-bar {
   width: 80%;
-  background-color: #555;
+  background-color: rgb(59, 58, 58);
   overflow: auto;
   margin: auto;
   border-radius: 4px;

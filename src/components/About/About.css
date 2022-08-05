@@ -1,0 +1,41 @@
+.wrap {
+  margin: auto;
+  padding: 5%;
+}
+
+.wrap-wrap {
+  margin: auto;
+}
+
+.about-title {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.527);
+  color: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+}
