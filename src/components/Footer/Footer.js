@@ -1,7 +1,7 @@
 import React from "react";
-import "./Contact.css";
+import "./Footer.css";
 
-const Icons = () => {
+const Footer = () => {
   return (
     <div className="icon-bar">
       <a href="mailto:cdfoye@gmail.com">
@@ -25,4 +25,4 @@ const Icons = () => {
   );
 };
 
-export default Icons;
+export default Footer;

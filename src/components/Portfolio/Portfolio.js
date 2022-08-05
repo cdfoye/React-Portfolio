@@ -14,7 +14,7 @@ const Portfolio = () => {
           return (
             <article key={id} className="githubRepo_item">
               <div className="gitProject_item_image">
-                <img src={image} alt={title} />
+                <img className="project-image" src={image} alt={title} />
               </div>
               <h3 className="title">{title}</h3>
               <div className="githubRepo_item_cta">

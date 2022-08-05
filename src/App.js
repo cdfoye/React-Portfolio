@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Particles from "./components/Particles/Particles";
 import Download from "./components/Download/Download";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Portfolio />} />
       </Routes>
+      <Footer />
       <Particles />
     </Router>
   );

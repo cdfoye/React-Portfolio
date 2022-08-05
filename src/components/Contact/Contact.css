@@ -6,6 +6,7 @@
   margin: auto;
   width: 70%;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .contact-wrapper {
@@ -40,35 +41,6 @@ textarea {
 
 .contact-btn:hover {
   background-color: black;
-}
-
-.icon-wrapper {
-  margin: auto;
-  padding: 20px;
-  width: 50%;
-}
-
-.icon-bar {
-  width: 80%;
-  background-color: rgb(59, 58, 58);
-  overflow: auto;
-  margin: auto;
-  border-radius: 4px;
-}
-
-.icon-bar a {
-  float: left;
-  width: 33%;
-  text-align: center;
-  padding: 10px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 32px;
-  margin: auto;
-}
-
-.icon-bar a:hover {
-  background-color: #000;
 }
 
 @media screen and (max-width: 992px) {
