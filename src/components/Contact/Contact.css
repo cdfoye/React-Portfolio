@@ -5,6 +5,7 @@
 .outer-wrap {
   margin: auto;
   width: 70%;
+  padding-top: 10%;
 }
 
 .contact-wrapper {
@@ -68,4 +69,25 @@ textarea {
 
 .icon-bar a:hover {
   background-color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .outer-wrap {
+    width: 80%;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .outer-wrap {
+    width: 90%;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .outer-wrap {
+    width: 100%;
+    padding-top: 10%;
+  }
 }

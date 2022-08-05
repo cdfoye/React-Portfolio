@@ -1,10 +1,17 @@
 .nav__list {
   list-style-type: none;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   margin-right: 4rem;
   padding: 0;
   overflow: hidden;
 }
+
+.nav__list-home {
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .nav__list-item {
   float: right;
   margin-right: 1rem;
